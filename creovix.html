@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creovix – Where Vision Meets Digital Craft</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and define custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'accent': '#6366f1', // Indigo 500
+                        'dark-bg': '#0f172a', // Slate 900
+                        'dark-card': '#1e293b', // Slate 800
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for smooth scrolling and clean look */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .icon {
+            /* Simple custom icon sizing */
+            width: 24px;
+            height: 24px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+    </style>
+</head>
+<body class="bg-dark-bg text-gray-200">
+
+    <!-- Navigation (Simple Top Bar) -->
+    <nav class="sticky top-0 z-50 bg-dark-bg/95 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="#" class="flex-shrink-0 text-xl font-bold text-accent">
+                    Creovix
+                </a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4 text-sm font-medium">
+                        <a href="#about" class="hover:text-white transition duration-150">About</a>
+                        <a href="#services" class="hover:text-white transition duration-150">Services</a>
+                        <a href="#process" class="hover:text-white transition duration-150">Process</a>
+                        <a href="#tech" class="hover:text-white transition duration-150">Tech Stack</a>
+                        <a href="#contact" class="bg-accent text-white px-3 py-1 rounded-full hover:bg-indigo-600 transition duration-150">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-20 pb-28 bg-dark-bg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-xs font-semibold uppercase tracking-widest text-accent mb-4 block">
+                Creovix – Create With Vision
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white leading-tight mb-4">
+                Design that Speaks. <br class="sm:hidden">Websites that Perform.
+            </h1>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+                Building Brands with Creativity & Code.
+            </p>
+            <a href="#services" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-accent hover:bg-indigo-600 transition duration-300 shadow-xl shadow-accent/50">
+                See What I Do
+            </a>
+        </div>
+    </header>
+
+    <main class="py-16">
+
+        <!-- About Me Section -->
+        <section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <div class="bg-dark-card rounded-xl p-8 md:p-12 shadow-2xl">
+                <h2 class="text-3xl font-bold text-white mb-6">👋 About Me</h2>
+                <div class="text-gray-300 space-y-4 text-lg">
+                    <p>I am a **freelance designer and web developer** dedicated to transforming ideas into meaningful digital experiences. With a blend of creative thinking and technical skill, I help startups, clothing brands, and students establish a strong presence in the digital world.</p>
+                    <p>At Creovix, every project is crafted thoughtfully — aligning design, usability, and brand identity for maximum impact.</p>
+                    <div class="mt-8">
+                        <h3 class="text-2xl font-semibold text-accent mb-4">💡 Design Philosophy</h3>
+                        <ul class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <li class="p-4 bg-gray-700/50 rounded-lg flex items-center space-x-3">
+                                <span class="text-accent text-2xl">✔</span>
+                                <span class="font-medium">Simplicity with Meaning</span>
+                            </li>
+                            <li class="p-4 bg-gray-700/50 rounded-lg flex items-center space-x-3">
+                                <span class="text-accent text-2xl">✔</span>
+                                <span class="font-medium">Aesthetic meets Functionality</span>
+                            </li>
+                            <li class="p-4 bg-gray-700/50 rounded-lg flex items-center space-x-3">
+                                <span class="text-accent text-2xl">✔</span>
+                                <span class="font-medium">Every pixel has a purpose</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services (What I Do Best) Section -->
+        <section id="services" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <h2 class="text-4xl font-extrabold text-white text-center mb-12">🧩 What I Do Best</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Service Card 1: Logo & Brand Identity -->
+                <div class="bg-dark-card p-6 rounded-xl shadow-xl border border-gray-700 hover:border-accent transition duration-300">
+                    <div class="text-accent mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M12 12c2.21 0 4-1.343 4-3s-1.79 -3-4-3s-4 1.343-4 3s1.79 3 4 3z"></path><path d="M12 12v9"></path><path d="M4.5 15.5l1.5 5.5"></path><path d="M18 15.5l-1.5 5.5"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Logo & Brand Identity Design</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start"><span class="text-green-400 mr-2">✅</span> Concept-driven logo creation based on brand personality</li>
+                        <li class="flex items-start"><span class="text-green-400 mr-2">✅</span> Professional branding assets: icons, typography & color system</li>
+                        <li class="flex items-start"><span class="text-green-400 mr-2">✅</span> Delivery in multiple formats for digital + print use</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2: Web Design for Brands -->
+                <div class="bg-dark-card p-6 rounded-xl shadow-xl border border-gray-700 hover:border-accent transition duration-300">
+                    <div class="text-accent mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z"></path><path d="M3 10h18"></path><path d="M10 3v18"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Web Design for Clothing & Lifestyle Brands</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start"><span class="text-green-400 mr-2">✅</span> Responsive websites optimized for mobile audiences</li>
+                        <li class="flex items-start"><span class="text-green-400 mr-2">✅</span> Product-focused layouts with trendy visual styling</li>
+                        <li class="flex items-start"><span class="text-green-400 mr-2">✅</span> Easy navigation for catalog + contact conversion</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3: Academic Project Development -->
+                <div class="bg-dark-card p-6 rounded-xl shadow-xl border border-gray-700 hover:border-accent transition duration-300">
+                    <div class="text-accent mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z"></path><path d="M12 9h4"></path><path d="M8 9h.01"></path><path d="M12 13h4"></path><path d="M8 13h.01"></path><path d="M12 17h4"></path><path d="M8 17h.01"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">College & Academic Project Development</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start"><span class="text-green-400 mr-2">✅</span> Mini & major project execution using modern technologies</li>
+                        <li class="flex items-start"><span class="text-green-400 mr-2">✅</span> Documentation & code explanation for presentation readiness</li>
+                        <li class="flex items-start"><span class="text-green-400 mr-2">✅</span> On-time delivery + technical support until submission</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Work Process & Differentiation -->
+        <section id="process" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                
+                <!-- Work Process -->
+                <div class="bg-dark-card p-8 rounded-xl shadow-xl">
+                    <h2 class="text-3xl font-bold text-white mb-8">Work Process</h2>
+                    <ol class="space-y-8 relative border-l border-gray-600 ml-4">
+                        <!-- Step 1 -->
+                        <li class="ml-6">
+                            <span class="absolute flex items-center justify-center w-8 h-8 bg-accent/20 rounded-full -left-4 ring-8 ring-dark-card">
+                                <span class="text-accent font-bold">1</span>
+                            </span>
+                            <h3 class="font-semibold text-xl text-white mb-1">Requirement Discussion</h3>
+                            <p class="text-gray-400">Deep dive into your goals, audience, and technical needs to establish a clear project scope.</p>
+                        </li>
+                        <!-- Step 2 -->
+                        <li class="ml-6">
+                            <span class="absolute flex items-center justify-center w-8 h-8 bg-accent/20 rounded-full -left-4 ring-8 ring-dark-card">
+                                <span class="text-accent font-bold">2</span>
+                            </span>
+                            <h3 class="font-semibold text-xl text-white mb-1">Concept & Design Draft</h3>
+                            <p class="text-gray-400">Creation of mockups, brand concepts, and initial visual drafts for your review and feedback.</p>
+                        </li>
+                        <!-- Step 3 -->
+                        <li class="ml-6">
+                            <span class="absolute flex items-center justify-center w-8 h-8 bg-accent/20 rounded-full -left-4 ring-8 ring-dark-card">
+                                <span class="text-accent font-bold">3</span>
+                            </span>
+                            <h3 class="font-semibold text-xl text-white mb-1">Development & Revisions</h3>
+                            <p class="text-gray-400">Bringing the design to life with code, followed by rigorous testing and necessary revisions.</p>
+                        </li>
+                        <!-- Step 4 -->
+                        <li class="ml-6">
+                            <span class="absolute flex items-center justify-center w-8 h-8 bg-accent/20 rounded-full -left-4 ring-8 ring-dark-card">
+                                <span class="text-accent font-bold">4</span>
+                            </span>
+                            <h3 class="font-semibold text-xl text-white mb-1">Final Delivery + Support</h3>
+                            <p class="text-gray-400">Handover of all assets and continued technical support until your goal is achieved.</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- What Makes Creovix Different? -->
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-white mb-8">🔥 What Makes Creovix Different?</h2>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-center text-gray-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon w-6 h-6 text-accent mr-3" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                            Creative + Functional solutions
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon w-6 h-6 text-accent mr-3" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                            On-time delivery with premium quality
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon w-6 h-6 text-accent mr-3" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                            Transparent Communication
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon w-6 h-6 text-accent mr-3" viewBox="0 0 24 24"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 12l5 5l10 -10"></path></svg>
+                            Affordable & Flexible Packages
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools & Tech Stack -->
+        <section id="tech" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <h2 class="text-3xl font-bold text-white text-center mb-10">🧪 Tools & Tech Stack</h2>
+            <div class="bg-dark-card p-8 rounded-xl shadow-xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Design Tools -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-accent mb-4 border-b border-gray-700 pb-2">Design Tools</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium shadow">Adobe Illustrator</span>
+                            <span class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium shadow">Photoshop</span>
+                            <span class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium shadow">Figma</span>
+                        </div>
+                    </div>
+                    <!-- Frontend -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-accent mb-4 border-b border-gray-700 pb-2">Frontend & Core Tech</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium shadow">HTML5</span>
+                            <span class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium shadow">CSS3</span>
+                            <span class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium shadow">JavaScript</span>
+                            <span class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium shadow">React.js</span>
+                        </div>
+                    </div>
+                    <!-- CMS & Deployment -->
+                    <div class="md:col-span-2">
+                        <h3 class="text-2xl font-semibold text-accent mb-4 border-b border-gray-700 pb-2">CMS, Ecommerce & Deployment</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium shadow">WordPress</span>
+                            <span class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium shadow">WooCommerce</span>
+                            <span class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium shadow">GitHub</span>
+                            <span class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium shadow">Vercel & Netlify</span>
+                            <span class="bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-medium shadow">Hosting Configurations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Achievements & Reviews -->
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <h2 class="text-3xl font-bold text-white text-center mb-10">Success Stories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Achievements -->
+                <div class="md:col-span-2 bg-dark-card p-8 rounded-xl shadow-xl">
+                    <h3 class="text-2xl font-semibold text-accent mb-4">⭐ Key Achievements</h3>
+                    <ul class="space-y-3 text-gray-300 list-disc list-inside">
+                        <li>Successfully delivered **10+ freelance projects**</li>
+                        <li>Helped clothing brands showcase products online with high visual appeal</li>
+                        <li>Provided multiple students with project solutions scoring **excellent grades**</li>
+                    </ul>
+                </div>
+
+                <!-- Reviews -->
+                <div class="md:col-span-1 bg-dark-card p-8 rounded-xl shadow-xl">
+                    <h3 class="text-2xl font-semibold text-accent mb-4">Client Review</h3>
+                    <blockquote class="italic text-lg text-gray-200 border-l-4 border-accent pl-4">
+                        "Delivered on time with great creativity. Loved the logo!"
+                    </blockquote>
+                    <p class="mt-4 text-sm font-medium text-gray-400">— Clothing Brand Owner</p>
+                    <blockquote class="italic text-lg text-gray-200 border-l-4 border-accent pl-4 mt-6">
+                        "My project presentation went smoothly thanks to Creovix."
+                    </blockquote>
+                    <p class="mt-4 text-sm font-medium text-gray-400">— Final Year Student</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section / CTA -->
+        <section id="contact" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 pt-10">
+            <div class="bg-accent rounded-xl p-8 md:p-12 text-center shadow-2xl shadow-accent/50">
+                <h2 class="text-4xl font-extrabold text-white mb-4">Let's Create With Vision.</h2>
+                <p class="text-indigo-100 text-xl mb-8">Ready to transform your idea into a meaningful digital experience?</p>
+
+                <div class="space-y-4 md:space-y-0 md:space-x-8 md:flex md:justify-center">
+                    <a href="mailto:hello.creovix@gmail.com" class="block md:inline-block bg-white text-accent font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition duration-300 shadow-lg">
+                        Email: hello.creovix@gmail.com
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/creovix.app" class="block md:inline-block border border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-accent transition duration-300 shadow-lg">
+                        Instagram: @creovix.app
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Creovix. Where Vision Meets Digital Craft.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
